@@ -1,9 +1,16 @@
 import React, { Component } from 'react';
+import Post from './Post';
 
-export default class PostForm extends Component {
+export default class PostForm1 extends Component {
   render() {
     return (
-      <h2>... Добавление записи запрещено ...</h2>
+      <div>
+        <ul>
+          {this.props.list.map(function(listValue){
+            return <Post name={listValue.name} description={listValue.description} />;
+          })}
+        </ul>
+      </div>
     );
   }
 }
