@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Post from './Post';
 
-export default class PostForm1 extends Component {
+export default class PostForm extends Component {
   render() {
     return (
       <div>
